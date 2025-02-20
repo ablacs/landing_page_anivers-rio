@@ -1,0 +1,39 @@
+@use "variables" as v;
+.infos-bar {
+  padding: 16px 24px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  gap: 40px;
+  &__infos {
+    display: flex;
+    gap: 40px;
+    &__item {
+      text-align: center;
+      font-size: 18px;
+      b {
+        font-weight: bold;
+        display: block;
+        color: #000;
+        padding-bottom: 8px;
+        font-size: 24px;
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    display: block;
+    &__infos {
+      display: block;
+      &__item {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    &__infos {
+      gap: 16px;
+    }
+  }
+}

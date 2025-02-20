@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save_the_date</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <img class="hero__logo" src="./images/anel.png" alt="" />
+        <h1 class="hero__title">
+          Bodas de <span class="hero__title--diamond">diamante !</span>
+        </h1>
+        <p class="hero__text">
+          Data da viagem em
+          <span id="contagemViagem"></span>
+        </p>
+        <p class="hero__text">
+          Data aviao em
+          <span id="contagemAviao"></span>
+        </p>
+        <p class="hero__text">
+          Data do check in em
+          <span id="contagemCheckIn"></span>
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Saída do avião de Brasília para Barcelona</b>
+              05/04/2025 às 17:00
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Saída do navio do porto de barcelona</b>
+              07/04/2025 às 16:00
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Check In no navio</b>
+              17/03/2025
+            </li>
+          </ul>
+          <a href="https://www.ncl.com/br/pt/" class="button" target="_blank"
+            >Mais informações</a
+          >
+        </div>
+      </div>
+    </header>
+    <section class="destinos destinos--check" data-aos="flip-down">
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Check in</h2>
+          <p class="destinos__details__description">
+            O primeiro passo da nossa viagem é fazer o check in no navio e
+            marcar a hora do embarque. Fiquem atentos, o check in começa 21 dias
+            antes do embarque. Para sua conveniência, o check in pode ser feito
+            online, no site da companhia de cruzeiros.
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/airport-6553696_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section
+      class="destinos destinos--aviao destinos--left"
+      data-aos="flip-down"
+    >
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Viagem de avião</h2>
+          <p class="destinos__details__description">
+            A viagem começa saindo de brasília com destino à barcelona. Serão x
+            horas de voo então preparem-se bem e se programem para chegar no
+            aeroporto 4 horas antes do voo
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/airplane-6867678_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="destinos destinos--navio" data-aos="flip-down">
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Embarque</h2>
+          <p class="destinos__details__description">
+            Finalmente estamos na europa e prestes a embarcar no navio. O nosso
+            navio é o NORWEGIAN BREAKAWAY.Pronto para fugir da rotina
+            diária?​​Tendo um dos nossos maiores navios, o Norwegian Breakaway®
+            oferece tudo o que você precisa para se sentir em um mundo distante
+            enquanto navega para os principais destinos. Faça um cruzeiro no
+            Caribe e nade com golfinhos, volte no tempo em um cruzeiro no
+            Mediterrâneo ou desfrute dias relaxantes em uma viagem
+            transatlântica. Aproveite o merecido "tempo para mim" no premiado
+            Mandara Spa® e na suíte termal. Ou aprimore as coisas no complexo
+            esportivo com o desafiante arvorismo de vários níveis e divirta-se
+            no parque aquático. Que tal levar seu paladar em uma deliciosa
+            viagem pelo mundo?​​​​​​​ Saboreie cortes premium na Cagney's
+            Steakhouse, a elegante culinária francesa no Le Bistro, os melhores
+            ingredientes em nosso vibrante restaurante italiano La Cucina e
+            muito mais. Jante à beira-mar e sob as estrelas ao longo do calçadão
+            de quase meio quilômetro de extensão, The Waterfront, e brinde ao
+            incrível pôr do sol no oceano em um de nossos bares e lounges
+            exclusivos. Prepare-se para noites incríveis em alto-mar com
+            produções originais vibrantes e música ao vivo.
+          </p>
+          <a
+            href="https://www.ncl.com/br/pt/404-N%C3%A3o-encontrado-h5gz7/"
+            class="button"
+            target="_blank"
+            >Saiba mais sobre o navio</a
+          >
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/900x312-Upsell_Getaway.webp"
+          alt=""
+        />
+      </div>
+    </section>
+    <section
+      class="destinos destinos--barcelona destinos--left"
+      data-aos="flip-down"
+    >
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Saída</h2>
+          <p class="destinos__details__description">
+            Saímos do porto de barcelona, logo essa será a primeira (e última)
+            cidade dentre os nossos destinos.Barcelona é uma cidade vibrante e
+            cosmopolita, capital da Catalunha, no nordeste da Espanha. Conhecida
+            por sua rica herança cultural e pela arquitetura única de Antoni
+            Gaudí – com obras icônicas como a Sagrada Família, o Parque Güell e
+            a Casa Batlló – a cidade combina tradição e modernidade. Além disso,
+            Barcelona oferece belas praias, uma culinária excepcional e uma
+            atmosfera dinâmica, que atrai visitantes do mundo inteiro.
+          </p>
+        </div>
+        <img class="destinos__image" src="./images/barcelona.jpg" alt="" />
+      </div>
+    </section>
+    <section class="destinos destinos--cannes" data-aos="flip-down">
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Cannes</h2>
+          <p class="destinos__details__description">
+            Cannes é uma charmosa cidade costeira na Riviera Francesa, conhecida
+            mundialmente pelo seu Festival de Cinema, que atrai celebridades e
+            profissionais da indústria. Com suas belas praias, hotéis luxuosos e
+            boutiques sofisticadas, Cannes exala glamour e cultura, oferecendo
+            uma experiência única na deslumbrante Côte d'Azur.
+          </p>
+        </div>
+        <img class="destinos__image" src="./images/cannes.jpg" alt="" />
+      </div>
+    </section>
+    <section
+      class="destinos destinos--florence destinos--left"
+      data-aos="flip-down"
+    >
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Florença</h2>
+          <p class="destinos__details__description">
+            Florença é uma cidade italiana na região da Toscana, reconhecida
+            como o berço do Renascimento. Seu centro histórico, repleto de obras
+            de arte, museus renomados e monumentos icônicos — como a Catedral de
+            Santa Maria del Fiore e a Ponte Vecchio — reflete a grandiosidade e
+            a riqueza cultural que influenciaram gerações e continuam a atrair
+            visitantes de todo o mundo.
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/florence-2533037_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="destinos destinos--rome" data-aos="flip-down">
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Roma</h2>
+          <p class="destinos__details__description">
+            Roma é a capital da Itália e um verdadeiro museu a céu aberto,
+            repleta de história milenar e monumentos icônicos. Conhecida por
+            suas ruínas romanas, como o Coliseu e o Fórum Romano, e por abrigar
+            o Vaticano, Roma mistura passado e presente com charme e
+            sofisticação. A cidade é um centro vibrante de cultura, arte e
+            gastronomia, que encanta visitantes do mundo todo.
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/colosseum-5773684_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section
+      class="destinos destinos--naples destinos--left"
+      data-aos="flip-down"
+    >
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Nápoles</h2>
+          <p class="destinos__details__description">
+            Nápoles é uma cidade italiana vibrante e histórica, conhecida por
+            sua rica herança cultural e culinária — especialmente pela pizza,
+            que tem origem na região. Localizada na Campânia, a cidade exibe um
+            fascinante mix de ruínas romanas, igrejas barrocas e a energia única
+            do sul da Itália, além de ser porta de entrada para atrações
+            próximas, como Pompeia e a Costa Amalfitana.
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/vesuvius-4910457_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="destinos destinos--cagliari" data-aos="flip-down">
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Cagliari</h2>
+          <p class="destinos__details__description">
+            Cagliari é a capital da ilha da Sardenha, na Itália, conhecida por
+            sua rica história, belas praias e arquitetura diversificada. A
+            cidade apresenta uma mistura de influências antigas e medievais, com
+            destaque para o anfiteatro romano e o bairro histórico de Castello,
+            que oferece vistas panorâmicas deslumbrantes. Cagliari é um destino
+            que combina cultura, paisagens naturais e um estilo de vida
+            relaxante típico do Mediterrâneo.
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/cagliari-3671983_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section
+      class="destinos destinos--ibiza destinos--left"
+      data-aos="flip-down"
+    >
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Ibiza</h2>
+          <p class="destinos__details__description">
+            Ibiza é uma ilha espanhola localizada no arquipélago das Ilhas
+            Baleares, famosa por suas praias paradisíacas, vida noturna vibrante
+            e festas renomadas. Além das baladas e eventos musicais, a ilha
+            também oferece paisagens deslumbrantes, vilarejos charmosos e uma
+            rica herança histórica, com a cidade de Dalt Vila, Patrimônio
+            Mundial da UNESCO, no topo de suas atrações culturais. Ibiza é um
+            destino que atrai tanto amantes de festas quanto aqueles que buscam
+            tranquilidade e beleza natural.
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/ibiza-7362964_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <section class="destinos destinos--palma" data-aos="flip-down">
+      <div class="container">
+        <div class="destinos__details">
+          <h2 class="destinos__details__title">Palma (Majorca)</h2>
+          <p class="destinos__details__description">
+            Palma de Maiorca é a capital da ilha de Maiorca, a maior das Ilhas
+            Baleares, na Espanha. A cidade é conhecida por sua catedral gótica
+            imponente, La Seu, que domina o horizonte, e por seu centro
+            histórico encantador, com ruas estreitas e repletas de charme
+            mediterrâneo. Palma oferece belas praias, um porto vibrante e uma
+            rica vida cultural, além de ser um destino que combina perfeitamente
+            história, modernidade e o clima ensolarado das Baleares.
+          </p>
+        </div>
+        <img
+          class="destinos__image"
+          src="./images/palma-cathedral-424816_1280.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

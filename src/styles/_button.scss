@@ -1,0 +1,27 @@
+@use "variables" as v;
+.button {
+  padding: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  color: v.$text;
+  background-color: #373f51;
+  margin: 0 auto;
+  border-radius: 2px;
+  &:hover {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2) inset,
+      -2px -2px 2px white inset;
+  }
+  @media (max-width: 640px) {
+    display: block;
+    width: 100%;
+    align-items: center;
+  }
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
