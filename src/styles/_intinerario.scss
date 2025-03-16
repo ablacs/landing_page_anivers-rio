@@ -4,17 +4,21 @@
   initial-value: 0deg;
   inherits: false;
 }
+:root {
+  --clr-1: #{v.$diamond};
+  --clr-2: #{v.$gold};
+  --clr-3: #{v.$charcoal};
+  --clr-4: #{v.$button_text};
+  --clr-5: #{v.$emerald};
+}
 .intinerario {
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   margin: 1vh;
-
   &__button {
-    &__link {
-      text-decoration: none;
-      color: #00567a;
-    }
+    position: relative;
+    // overflow: hidden;
     width: 24vh;
     height: 6vh;
     background-color: #fff;
@@ -25,5 +29,51 @@
     border: none;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -0.15rem;
+      z-index: -1;
+      background: conic-gradient(
+        from var(--angle),
+        transparent,
+        #12c2e9,
+        #c471ed,
+        #f64f59,
+        #c471ed,
+        #12c2e9
+      );
+      border-radius: inherit;
+      animation: rotate 5s linear infinite;
+    }
+    &::before {
+      filter: blur(1.5rem);
+    }
+    &__link {
+      text-decoration: none;
+      color: #00567a;
+    }
+  }
+}
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+@media (max-width: 640px) {
+  .intinerario {
+    border-radius: 500px;
+    position: fixed;
+    margin: 1vh;
+    &__button {
+      width: 8vh;
+      height: 8vh;
+      border-radius: 50%;
+      font-size: 12px;
+    }
   }
 }
